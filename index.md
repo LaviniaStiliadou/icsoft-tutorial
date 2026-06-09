@@ -1,8 +1,6 @@
 ---
-title: About
-layout: default
-
-navigation_weight: 1
+title: Home
+layout: page
 ---
 
 # ICSOFT 2026 Tutorial: Low-Code Engineering for Quantum Computing Applications
