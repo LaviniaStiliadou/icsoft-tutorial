@@ -1,7 +1,10 @@
 ---
 title: Schedule
-layout: page
+layout: default
+
+navigation_weight: 2
 ---
+
 
 # Tutorial Schedule & Structure
 
