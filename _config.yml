@@ -1,50 +1,5 @@
-#########
-#
-# workshop-template-b, evanwill
-# a Jekyll template for a simple workshop website
-# https://github.com/evanwill/workshop-template-b
-#
-#########
-
-#######
-# SITE SETTINGS
-#
-# title appears in the header
-title: "ICSOFT 2026 Tutorial"
-# title-icon appears in the header to give some pizazz (leave blank for none)
-title-icon: cpu
-# description, keywords, and image for meta tags
-description: "An official ICSOFT 2026 tutorial exploring the intersection of Low-Code/No-Code platforms and High Performance Quantum Computing. Covering visual programming, automated workflows, and model-driven systems development."
-keywords: "ICSOFT 2026, Low-Code and No-Code Platforms, Software Engineering, Quantum Computing, High Performance Computing, Model-Driven Software Engineering, Programming Frameworks"
-# featured-image is added to metadata tags for social media sharing
-featured-image: "/images/uidaho-workshop.jpg"
-# add search box to footer? true/false
-search: true
-
-# author settings for cc-by, appears in the footer and credits
-author: Lavinia Stiliadou
-# your github username for link [optional]
-github_username: LaviniaStiliadou
-# year or date published
-pub_year: 2026
-# location of code, the full url to your github repository
-source-code: https://github.com/evanwill/workshop-template-b
-
-##########
-# URL VARIABLES [optional!!]
-url:
-baseurl:
-
-##########
-# ROBOTS EXCLUDE [optional!]
-noindex: false 
-
-#######
-# BUILD SETTINGS [usually leave as is]
-defaults:
-  - scope:
-      path: "content"
-    values:
-      layout: "section"
-exclude: [README.md, LICENSE, assets/lib/README.md]
-markdown: kramdown
+title: Quantum Service-oriented Computing - A Practical Introduction to Quantum Web Services and Quantum Workflows
+description: ICWE 2024 Tutorial
+theme: jekyll-theme-cayman
+baseurl: /icwe-tutorial-2024
+url: http://UST-QuAntiL.github.io

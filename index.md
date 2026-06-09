@@ -1,6 +1,8 @@
 ---
-title: Home
-layout: page
+title: About
+layout: default
+
+navigation_weight: 1
 ---
 
 # ICSOFT 2026 Tutorial: Low-Code Engineering for Quantum Computing Applications
@@ -46,12 +48,10 @@ By completing this hands-on session, attendees will gain foundational knowledge 
 
 ---
 
-## Hands-On Session
+## References
 
-### 1. Initialize Local Services
-Clone the core tutorial repository and spin up the microservice ecosystem stack using Docker:
+[1] Stiliadou, L., Barzen, J., Bühler, F., Georg, D., Stiliadou, S.-N.: Low-Code Quantum Algorithm Modeling and Execution for Hybrid Cloud Environments. In: Proceedings of the 16th International Conference on Cloud Computing and Services Science. SciTePress (2026).
 
-```bash
-git clone [https://github.com/LaviniaStiliadou/2026-quancom.git](https://github.com/LaviniaStiliadou/2026-quancom.git)
-cd docker
-docker-compose up -d
+[2] Stiliadou, L., Barzen, J., Bühler, F., Georg, D.: A Multi-Domain Quantum Low-Code Platform. In: Proceedings of the 1st International Conference on Quantum Information, Computing, Communication, and Simulation. Springer (2026).
+
+[3] Weder, B., Barzen, J., Beisel, M., Bühler, F., Georg, D., Leymann, F., Stiliadou, L.: Qunicorn: A Middleware for the Unified Execution Across Heterogeneous Quantum Cloud Offerings. In: Proceedings of the 2025 IEEE/ACM International Workshop on Quantum Software Engineering (Q-SE), pp. 17-24. IEEE (2025).
