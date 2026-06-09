@@ -5,10 +5,10 @@ layout: default
 navigation_weight: 1
 ---
 
-# ICSOFT 2026 Tutorial: Low-Code Engineering for Quantum Computing Applications
+# ICSOFT 2026 Tutorial: Collaborative Model-Driven Quantum Software Engineering: A Hands-On Tutorial with Qonstruct
 
 ## About
-This website hosts the official material for the tutorial **"Low-Code Engineering for Quantum Computing Applications"**, which will be held in Porto (Portugal) during the 2026 edition of the International Conference on Software Technologies (ICSOFT).
+This website hosts the official material for the tutorial **"Collaborative Model-Driven Quantum Software Engineering: A Hands-On Tutorial with Qonstruct"**, which will be held in Porto (Portugal) during the 2026 edition of the International Conference on Software Technologies (ICSOFT).
 
 ---
 

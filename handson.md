@@ -1,132 +1,136 @@
 ---
+
 title: Hands-On Session
 layout: default
-
 navigation_weight: 3
----
+--------------------
 
-# Hands-On Session
+# Hands-On Session: Collaborative Model-Driven Design & Execution
 
-In the following, we will guide you through all the steps required to model, deploy, and execute a low-code model.
-In this tutorial, a low-code model is modeled manually by attendees.
+This practical session guides you through the end-to-end lifecycle of a quantum software artifact using the Qonstruct framework. To reflect real-world interdisciplinary software development, this session highlights a **collaborative modeling workflow**. You will simulate two distinct development roles simultaneously on your local machine to design a domain model, trigger automated compilation, and orchestrate execution via quantum middleware.
 
-## Overview
+## Architectural Components
 
-The system consists of the following components:
+The underlying framework consists of three integrated core services:
 
-- **Quantum Low-Code Modeler**  
-  A web-based graphical modeling environment that enables the collaborative design of quantum applications. It provides visual elements to specify problems at a high level of abstraction instead of quantum circuits.
-
-- **Backend Transformation Service**  
-  A service that automatically transforms the low-code models into executable quantum circuits.
-
-- **Qunicorn**
-Middleware for the execution of quantum circuits on different quantum cloud providers.
+* **Quantum Low-Code Modeler:** A web-based graphical workspace enabling concurrent, multi-user collaborative design. It allows developers to specify application logic at a high level of domain abstraction rather than manipulating gate-level circuits.
+* **Backend Transformation Service:** A compiler engine that validates visual low-code domain models and automatically transforms them into standard intermediate quantum representations (OpenQASM3).
+* **Qunicorn:** A service-oriented middleware layer managing structural circuit deployment, token mapping, and execution verification across heterogeneous quantum cloud backends and local simulators.
 
 ---
 
-## 1. Start the Services
+## Step 1: Initialize the Local Services
 
-Run the following commands to start all services:
+Execute the following commands in your terminal instance to launch the containerized infrastructure microservices using Docker:
 
-```
-git clone https://github.com/LaviniaStiliadou/2026-quancom.git
+```bash
+git clone https://github.com/LaviniaStiliadou/2026-icsoft-tutorial.git
 cd docker
-docker-compose up
+docker-compose up -d
 ```
----
-
-## 2. Open the Quantum Low-Code Modeler
-
-Open the Quantum Low-Code Modeler at http://localhost:4242.
-
-You should see the Modeler start screen:
-
-![Modeler Initial](docs/graphics/0_ModelerOverview.png)
 
 ---
 
-## 3. Open a second tab of the Quantum Low-Code Modeler
+## Step 2: Access the Workspace Layout
 
-Open a second tab of the Quantum Low-Code Modeler at http://localhost:4242 and configure this user as expert.
+Open your primary web browser window and navigate to the application ecosystem endpoint:
 
-You should see the Modeler start screen:
+**URL:** `http://localhost:4242`
 
-![Modeler Initial](docs/graphics/1_ConfigureExpertMode.png)
-
----
-
-## 4. Start the collaborative mode in both modeler
-
-Click on "Experience Mode" and enable "Collaboration Mode".
-As illustrated in the picture, you should see now two users and two cursors.
-
-![Enable Collaboration](docs/graphics/2_EnableCollaboration.png)
----
-
-
-## 5. Start Modeling
-
-Open the "Boundary Elements" category and drag the "Prepare State" out.
-In case you want to skip the modeling, you can directly import the ![model](models/grover.json)
-![Prepare State](docs/graphics/3_PrepareState.png)
-
-
-## 6. Add Oracle & Diffuser 
-
-Open the "Operators" category with the subcategory "Quantum operators" and drag the "Oracle" and "Grover Diffuser" out.
-Connect all the tasks together.
-
-![Oracle](docs/graphics/4_Grover.png)
-
-## 7. Add Measurement & missing attributes
-
-Open the "Boundary Elements" category and drag the "Measurement" out.
-Connect the "Diffuser" to the "Measurement".
-
-Furthermore, let the other user add the size & oracle value and observe that the model gets synchronized.
-![Measurement](docs/graphics/5_Measurement.png)
+The interface will initialize with the default visual modeling canvas.
 
 ---
 
-## 8. Transform the Model
+## Step 3: Simulate Multi-Role Environments
 
-Click "Send to Backend" to transform the domain model into an executable circuit.
-![Transform](docs/graphics/6_SendToBackend.png)
+To demonstrate collaborative software engineering across different domain roles (e.g., a business analyst and a hardware expert), open a second browser tab or an incognito window pointing to the same endpoint:
 
-Now the validation opens up, but these are only warnings that can be skipped, so click on "Continue".
-![Validation](docs/graphics/6_SendToBackendValidation.png)
+`http://localhost:4242`
 
-Select "OpenQASM3" as transformation target.
+Access the workspace configuration settings panel in this second tab and switch its active profile layout to **Expert Mode**. This unlocks advanced node properties and deeper register structures.
 
-![Validation](docs/graphics/7_SendToBackendOpenqasm.png)
 ---
 
-## 9. Execute the Model
+## Step 4: Initialize Real-Time Collaboration & Synchronization
 
-Click "History".
-![Execute](docs/graphics/8_History.png)
+On both active browser tabs, navigate to the **Experience Mode** menu and enable **Collaboration Mode**.
 
-Now select the model that you want to execute by clicking on "Execute Circuit". 
-![Download Result](docs/graphics/9_HistoryValidation.png)
+The underlying framework will instantly synchronize the shared state machine. You will observe concurrent workspace telemetry displaying multi-user sessions and real-time cursor tracking across both design interfaces.
 
-Continue by clicking the blue buttons to start the execution.
-
-![Download Result](docs/graphics/10_ExecutionStart.png)
-![Download Result](docs/graphics/11_QunicornDeployment.png)
-![Download Result](docs/graphics/12_QunicornDeployment2.png)
 ---
 
-## 10. View the Result 
+## Step 5: Define State Domain Boundaries
 
-When the execution is finished, you can see that the element "1" is found.
+In the first browser tab, open the **Boundary Elements** component drawer on the left structural palette.
 
-![Result](docs/graphics/13_QunicornExecutionResult.png)
+Drag a **Prepare State** element block onto the central modeling grid space.
+
+Observe how the block instantly appears in the second browser tab via real-time synchronization.
+
+> 💡 **Note:** If you prefer to bypass manual component mapping at any point, you can directly upload the validated baseline file from the repository via `models/grover.json`.
+
 ---
 
+## Step 6: Append Algorithmic Operators
+
+Expand the **Operators** drawer hierarchy and locate the **Quantum Operators** sub-category layout.
+
+Drag the **Oracle** and **Grover Diffuser** modules onto the canvas workspace.
+
+Connect the structural output node from the **State Preparation** module into the input nodes of the subsequent quantum operators.
+
+---
+
+## Step 7: Concurrent Parameter Injection & Measurement
+
+Return to the **Boundary Elements** menu and append a trailing **Measurement** block to the execution chain.
+
+Wire the output of the **Diffuser** block to the input entry of the **Measurement** node.
+
+To experience the collaborative synchronization, use your second browser tab (**Expert Mode**) to click on the components and specify the quantum register sizing and your designated oracle search parameters within the properties panel.
+
+Watch your first browser tab automatically update to reflect these structural attribute adjustments.
+
+---
+
+## Step 8: Trigger the Model-to-Code Transformation
+
+Select the **Send to Backend** execution action trigger located on the top application toolbar.
+
+The transformation engine will validate the schema. Click **Continue** to progress past non-blocking verification or optimization notices.
+
+Define **OpenQASM3** as your programmatic compilation target format.
+
+---
+
+## Step 9: Queue and Orchestrate Deployment
+
+Navigate to the **History** workspace module to review generated build artifacts.
+
+Locate your newly compiled OpenQASM3 sequence matrix and select **Execute Circuit**.
+
+Advance through the structural blue prompt indicators to hand off the execution configuration safely to the Qunicorn service router.
+
+---
+
+## Step 10: Analyze Hardware Target Output
+
+Once the runtime pipeline tasks finish processing inside the middleware execution queue, the interface displays the return registers.
+
+The peak value amplification verifies successful tracking of the target data element ( |1\rangle ), completing the low-code engineering cycle.
+
+---
+
+# Legal Notices
 
 ## Disclaimer of Warranty
-Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an **"AS IS" BASIS**, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+
+You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with your exercise of permissions under this License.
 
 ## Haftungsausschluss
-Dies ist ein Forschungsprototyp. Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.
+
+Dies ist ein Forschungsprototyp.
+
+Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist – außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden – ausgeschlossen.
