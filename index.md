@@ -3,22 +3,55 @@ title: Home
 layout: page
 ---
 
-# Bootstrap Workshop Template!
+# ICSOFT 2026 Tutorial: Low-Code Engineering for Quantum Computing Applications
 
-{% include figure.html img="uidaho-workshop.jpg" alt="intro image here" caption="Library workshop" width="75%" %}
+## About
+This website hosts the official material for the tutorial **"Low-Code Engineering for Quantum Computing Applications"**, which will be held in Porto (Portugal) during the 2026 edition of the International Conference on Software Technologies (ICSOFT).
 
-A minimal Jekyll theme with Bootstrap for creating workshop websites.
+---
 
-*Add your workshop abstract here!*
+## Abstract
+Quantum applications are hybrid by nature, requiring tight integration between classical runtime systems and specialized quantum coprocessors. However, software engineering for these systems is bottlenecked by low-level, hardware-centric development patterns and gate-level circuit granularities. This tutorial introduces **Qonstruct**, an end-to-end research prototype designed to decouple quantum domain logic from hardware execution targets. 
 
-Learn how to create a super quick easy website for a workshop by writing a few markdown files! 
-Host it for free on GitHub with gh-pages, and share!
-Fun!
+Participants will explore how visual programming, model-driven engineering, and low-code abstractions can scale software design lifecycles without sacrificing system validation capabilities. The presentation covers high-level domain mapping, automated translation matrices into intermediate quantum representations, and cross-platform job orchestration via declarative middleware frameworks.
 
-*See also:* [workshop-template](https://evanwill.github.io/workshop-template/), original minimal version.
+---
 
-{% include toc.html %}
+## Motivation
+Quantum computers leverage structural mechanics like superposition and entanglement to yield computational advantages for specific algorithmic classes. Because they function as specialized accelerators rather than universal classical computer replacements, real-world deployment requires a hybrid software topology [3]. Unlocking this computational landscape has traditionally demanded exhaustive engineering knowledge of specialized assembly primitives, gate topologies, and individual provider backends. 
 
-------
+To lower this high entry barrier, a modern shift toward abstraction is taking place inside the quantum software stack [1, 2]. By providing visual domain blocks instead of individual gate arrays, a low-code architecture maps complex architectural constructs—such as state-preparation routines, localized oracles, and algorithmic diffusers—into cohesive software artifacts. This tutorial bridges the abstraction gap by mapping multi-domain low-code specifications directly to automatic orchestration layers that compile, validate, and deploy native code seamlessly across cloud nodes.
 
-{% include template/credits.html %}
+---
+
+## Intended Audience
+Attendees of this tutorial do not require a deep prerequisite background in quantum physics, advanced quantum mechanics, or low-level circuit hardware configurations. This session provides a practical roadmap for software engineers, systems designers, and cloud architects looking to acquire fundamental literacy in modeling, building, compiling, and deploying hybrid quantum application workflows.
+
+---
+
+## Technical Requirements
+The practical hands-on tracking portion of this tutorial requires a laptop with the following baseline prerequisites installed:
+* **Docker Engine** & **Docker-Compose**
+* An active internet connection to clone workspace images.
+* A standard modern web browser (Edge, Firefox, or Safari).
+
+---
+
+## Learning Goals
+By completing this hands-on session, attendees will gain foundational knowledge on:
+1. Core fundamentals governing practical quantum software engineering and systemic layer abstraction.
+2. Building abstract quantum domain models visually using standard high-level component blocks.
+3. Automatically compiling visual artifacts into valid, standard-compliant OpenQASM intermediate representations.
+4. Orchestrating, deploying, and tracking compiled quantum job packages via decentralized cloud middleware infrastructure.
+
+---
+
+## Hands-On Session
+
+### 1. Initialize Local Services
+Clone the core tutorial repository and spin up the microservice ecosystem stack using Docker:
+
+```bash
+git clone [https://github.com/LaviniaStiliadou/2026-quancom.git](https://github.com/LaviniaStiliadou/2026-quancom.git)
+cd docker
+docker-compose up -d
