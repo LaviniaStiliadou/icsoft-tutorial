@@ -3,7 +3,7 @@ title: Hands-On Session
 layout: default
 
 navigation_weight: 3
---------------------
+---
 
 # Hands-On Session - Collaborative Model-Driven Design & Execution
 
