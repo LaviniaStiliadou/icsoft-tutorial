@@ -34,6 +34,6 @@ The tutorial comprises two sessions, including both introductory lectures and pr
 | **30 min** | Low-Code & Model-Driven Design & Navigating the Quantum Low-Code Modeler | [Slides](https://github.com/LaviniaStiliadou/icsoft-tutorial/blob/main/resources/slides/ICSOFT2026_Session2.pdf) |
 | **40 min** | Practical Session I: Collaborative Model-Driven Design & Execution | [Instructions](https://laviniastiliadou.github.io/icsoft-tutorial/handson.html), [Source Code](https://github.com/LaviniaStiliadou/2026-icsoft) |
 | *30 min* | *Coffee Break & Networking* | — |
-| **45 min** | Practical Session II: Algorithm Selection and Model Generation | [Instructions](https://laviniastiliadou.github.io/icsoft-tutorial/handson2.html), [Source Code](https://github.com/LaviniaStiliadou/2026-icsoft)|
-| **15 min** | Open Discussion, Evaluation & Q/A | `[Survey]` |
+| **45 min** | Practical Session II: Algorithm Selection and Model Generation | [Instructions](https://laviniastiliadou.github.io/icsoft-tutorial/handsonsession2.html), [Source Code](https://github.com/LaviniaStiliadou/2026-icsoft)|
+| **15 min** | Open Discussion, Evaluation & Q/A | `[Survey will follow]` |
 

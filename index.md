@@ -18,8 +18,6 @@ Quantum software engineering remains a challenging discipline due to the interdi
 This tutorial introduces Qonstruct, an open-source platform for collaborative model-driven quantum software engineering. Qonstruct enables developers to model quantum applications using high-level domain abstractions rather than low-level quantum circuits, allowing them to focus on application logic instead of hardware-specific implementation details.
 Through model-driven transformations, visual specifications are automatically translated into standard-compliant quantum representations and executable orchestration workflows that support validation, deployment, and execution across heterogeneous quantum computers.
 
-The tutorial combines conceptual foundations with a hands-on session in which participants will design quantum applications using visual low-code models, transform them into executable artifacts, and deploy them through integrated workflow orchestration mechanisms. By connecting high-level modeling with automated execution pipelines, attendees will gain practical insight into how model-driven engineering and low-code can improve the accessibility, maintainability, and scalability of quantum software development.
-
 
 ---
 
