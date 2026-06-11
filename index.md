@@ -13,16 +13,23 @@ This website hosts the official material for the tutorial **"Collaborative Model
 ---
 
 ## Abstract
-Quantum applications are hybrid by nature, requiring tight integration between classical runtime systems and specialized quantum coprocessors. However, software engineering for these systems is bottlenecked by low-level, hardware-centric development patterns and gate-level circuit granularities. This tutorial introduces **Qonstruct**, an end-to-end research prototype designed to decouple quantum domain logic from hardware execution targets. 
+Quantum software engineering remains a challenging discipline due to the interdisciplinary expertise required to design, implement, and deploy hybrid quantum-classical applications. Developers must navigate concepts from quantum computing, software architecture, cloud computing, and distributed systems while simultaneously addressing hardware heterogeneity and rapidly evolving execution platforms. Although low-code and visual development approaches have emerged to reduce this complexity, existing solutions are often restricted to specific domains such as quantum machine learning, remain tightly coupled to circuit-level modeling, or rely on proprietary ecosystems that limit extensibility and collaboration.
 
-Participants will explore how visual programming, model-driven engineering, and low-code abstractions can scale software design lifecycles without sacrificing system validation capabilities. The presentation covers high-level domain mapping, automated translation matrices into intermediate quantum representations, and cross-platform job orchestration via declarative middleware frameworks.
+This tutorial introduces Qonstruct, an open-source platform for collaborative model-driven quantum software engineering. Qonstruct enables developers to model quantum applications using high-level domain abstractions rather than low-level quantum circuits, allowing them to focus on application logic instead of hardware-specific implementation details.
+Through model-driven transformations, visual specifications are automatically translated into standard-compliant quantum representations and executable orchestration workflows that support validation, deployment, and execution across heterogeneous quantum computers.
+
+The tutorial combines conceptual foundations with a hands-on session in which participants will design quantum applications using visual low-code models, transform them into executable artifacts, and deploy them through integrated workflow orchestration mechanisms. By connecting high-level modeling with automated execution pipelines, attendees will gain practical insight into how model-driven engineering and low-code can improve the accessibility, maintainability, and scalability of quantum software development.
+
 
 ---
 
 ## Motivation
-Quantum computers leverage structural mechanics like superposition and entanglement to yield computational advantages for specific algorithmic classes. Because they function as specialized accelerators rather than universal classical computer replacements, real-world deployment requires a hybrid software topology [3]. Unlocking this computational landscape has traditionally demanded exhaustive engineering knowledge of specialized assembly primitives, gate topologies, and individual provider backends. 
+Despite significant advances in quantum computers and programming frameworks, developing quantum applications remains a complex  task. As it requires developers often expertise across multiple domains, including quantum computing, mathematics and software engineering.
 
-To lower this high entry barrier, a modern shift toward abstraction is taking place inside the quantum software stack [1, 2]. By providing visual domain blocks instead of individual gate arrays, a low-code architecture maps complex architectural constructs—such as state-preparation routines, localized oracles, and algorithmic diffusers—into cohesive software artifacts. This tutorial bridges the abstraction gap by mapping multi-domain low-code specifications directly to automatic orchestration layers that compile, validate, and deploy native code seamlessly across cloud nodes.
+Current development approaches predominantly expose quantum functionality at the circuit level, forcing developers to reason about implementation details that are often unrelated to the problem domain. While low-code and visual development environments have emerged to address this challenge, many existing platforms either target specialized application areas such as quantum machine learning, provide only circuit-level abstractions, or operate within closed and proprietary ecosystems. Consequently, they offer limited support for collaborative software engineering practices and end-to-end application lifecycle management.
+
+Qonstruct addresses these limitations through a low-code approach that elevates quantum software development from circuit construction to domain-oriented application modeling. Developers can create quantum solutions using reusable, high-level building blocks that capture application intent rather than implementation details. These models are automatically transformed into  executable workflows, enabling integration with cloud services and quantum computers.
+
 
 ---
 
@@ -33,7 +40,7 @@ Attendees of this tutorial do not require a deep prerequisite background in quan
 
 ## Technical Requirements
 The practical hands-on tracking portion of this tutorial requires a laptop with the following baseline prerequisites installed:
-* **Docker Engine** & **Docker-Compose**
+* Docker & Docker-Compose
 * An active internet connection to clone workspace images.
 * A standard modern web browser (Edge, Firefox, or Safari).
 
@@ -41,10 +48,10 @@ The practical hands-on tracking portion of this tutorial requires a laptop with 
 
 ## Learning Goals
 By completing this hands-on session, attendees will gain foundational knowledge on:
-1. Core fundamentals governing practical quantum software engineering and systemic layer abstraction.
-2. Building abstract quantum domain models visually using standard high-level component blocks.
-3. Automatically compiling visual artifacts into valid, standard-compliant OpenQASM intermediate representations.
-4. Orchestrating, deploying, and tracking compiled quantum job packages via decentralized cloud middleware infrastructure.
+1. Core fundamentals governing practical quantum software engineering.
+2. Building abstract quantum domain models visually using high-level low-code blocks.
+3. Automatically compiling visual artifacts into valid, standard-compliant OpenQASM intermediate representations or even quantum workflows.
+4. Orchestrating, deploying, and tracking compiled quantum job packages.
 
 ---
 
