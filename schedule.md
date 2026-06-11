@@ -20,7 +20,7 @@ The tutorial comprises two sessions, including both introductory lectures and pr
 * **Orchestration Middleware:** Introduction to unified execution across heterogeneous cloud providers and intermediate quantum representations.
 * **Hands-On Lab:** Step-by-step guidance on collaborative visual application modeling (Grover's Search), multi-domain translation (OpenQASM3 & workflows), and cloud middleware deployment via Qunicorn.
 
-### Session 2: Nodel Generation Pipeline and Feedback
+### Session 2: Model Generation Pipeline and Feedback
 * **Hands-On Lab:** Step-by-step guidance on algorithm selection and model generation of quantum low-code models.
 * **Evaluation & Feedback:** Interactive Q&A session alongside a feedback survey to evaluate the platform and propose toolchain enhancements.
 
