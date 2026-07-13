@@ -1,11 +1,11 @@
 ---
-title: Hands-On Session
+title: Hands-On Session 2
 layout: default
 
-navigation_weight: 3
+navigation_weight: 4
 ---
 
-# Hands-On Session - Collaborative Model-Driven Design & Execution
+# Hands-On Session - Collaborative Model-Driven Design & Execution Part 2
 
 This practical session guides you through the end-to-end lifecycle of a quantum software artifact using the Qonstruct framework. To reflect real-world interdisciplinary software development, this session highlights a **collaborative modeling workflow**. You will simulate two distinct development roles simultaneously on your local machine to design a domain model, trigger automated compilation, and orchestrate execution via quantum middleware.
 
